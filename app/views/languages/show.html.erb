@@ -1,0 +1,22 @@
+<br>
+  <div class='container'>
+    <div class="row justify-center">
+      <%= image_tag '/assets/images/Nico.jpg', class: "avatar" %>
+      <h1>Nicolas EYMENIER, FRM</h1>
+    </div>
+
+    <% case @language.name %>
+      <% when "English" %>
+        <%= render 'profile/english' %>
+
+      <% when "Français" %>
+        <%= render 'profile/french' %>
+
+      <% when "Português" %>
+        <%= render 'profile/portuguese' %>
+
+      <% when "Español" %>
+        <%= render 'profile/spanish' %>
+    <% end %>
+  </div>
+<br>
