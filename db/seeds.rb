@@ -1,7 +1,15 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+
+
+
+language = Language.new(name: "English", flag: "https://www.countryflags.io/us/shiny/64.png")
+language.save
+
+language = Language.new(name: "Français", flag: "https://www.countryflags.io/fr/shiny/64.png")
+language.save
+
+language = Language.new(name: "Português", flag: "https://www.countryflags.io/br/shiny/64.png")
+language.save
+
+language = Language.new(name: "Español", flag: "https://www.countryflags.io/es/shiny/64.png")
+language.save
