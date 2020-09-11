@@ -3,15 +3,14 @@
     <div id="landing-page-form" class="col-xs-9 col-md-6">
       <h1>Nicolas EYMENIER</h1>
          <div>
-          <div class="button-box">
-            <%= link_to("English", language_path(@language), class: "btn-outline") %>
-          </div >
-          <div class="button-box">
-            <%= link_to("Français", language_path(@language), class:"btn-outline")  %>
-          </div>
-          <div class="button-box">
-          <%= link_to("Português", language_path(@language), class:"btn-outline")  %>
-          </div>
+          <% @languages.each do |language| %>
+            <%= link_to language_path(language) do %>
+              <%= image_tag language.flag %>
+            <% end %>
+
+            <%= link_to(language.name, language_path(language)) %>
+
+          <% end %>
         </div>
     </div>
   </div>
