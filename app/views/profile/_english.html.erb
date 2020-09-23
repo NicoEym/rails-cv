@@ -112,12 +112,13 @@
 <div class='card'>
   <h2>Education</h2>
 
-  <%= render 'shared/card-education', link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.garp.org/#!/home', text: "GARP - Financial Risk Manager - 2020"%>
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.garp.org/#!/home', text: "GARP - Financial Risk Manager - 2020"} %>
+
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.anbima.com.br/pt_br/educar/certificacoes/cpa-20.htm', text: "Anbima - CPA 20 2019"} %>
+
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.lewagon.com/', text: "Le Wagon 2019"} %>
 
 
-    <div><p><a href="https://www.anbima.com.br/pt_br/educar/certificacoes/cpa-20.htm">Anbima - CPA 20 2019</a></p></div>
-
-    <div><p><a href="https://www.lewagon.com/">Le Wagon 2019</a></p></div>
 
     <div>
     Master of Science in Risk & Investment Management         2009 - 2012

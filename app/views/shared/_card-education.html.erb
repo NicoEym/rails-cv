@@ -1,9 +1,9 @@
 <div>
     <div class='logo'>
-      <%= image_tag link_img, class: "avatar-large" %>
+      <%= image_tag locals[:link_img] , class: "avatar-large" %>
 
     </div>
       <div>
-        <p><a href=link_site>text</a></p>
+        <p><%= link_to locals[:text], locals[:link_site] %></p>
       </div>
     </div>
