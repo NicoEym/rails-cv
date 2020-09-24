@@ -4,6 +4,7 @@
   <p><i class="fas fa-phone-square"></i> +55 (11) 99595-2363</p>
   <p><i class="fas fa-at"></i> nicolas.eymenier@edhec.com</p>
   <p><a href="https://www.linkedin.com/in/nicolas-eymenier-frm-63012b60/"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
+  <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub account</a></p>
 </div>
 
 <div>
@@ -112,53 +113,42 @@
 <div class='card'>
   <h2>Education</h2>
 
-  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.garp.org/#!/home', text: "GARP - Financial Risk Manager - 2020"} %>
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.garp.org/#!/home', diploma: "Financial Risk Manager", school: "Global Association of Risk Professional", date: "2020"} %>
 
-  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.anbima.com.br/pt_br/educar/certificacoes/cpa-20.htm', text: "Anbima - CPA 20 2019"} %>
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.anbima.com.br/pt_br/educar/certificacoes/cpa-20.htm', diploma: "CPA 20", school: "Anbima", date: "2019"} %>
 
-  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.lewagon.com/', text: "Le Wagon 2019"} %>
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.lewagon.com/', diploma: "Coding bootcamp", school: "Le Wagon", date: "2019"} %>
 
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.edhec.edu/en', diploma: "Master of Science in Risk & Investment Management", school: "EDHEC Business School  - London", date: "2009 - 2012"} %>
 
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.lewagon.com/', diploma: "French “Classe Préparatoire” in Economics", school: "International High School in Valbonne, France", date: "2007- 2009"} %>
 
-    <div>
-    Master of Science in Risk & Investment Management         2009 - 2012
-    EDHEC Business School  - London
-    </div>
+  <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'http://www.civfrance.com/', diploma: "French “Baccalaureat” in Economics (Equivalent to A-level)", school: "High School Pierre et Marie Curie – Menton, France", date: "2004- 2007"} %>
 
-    <div>
-    French “Classe Préparatoire” in Economics             2007- 2009
-    International High School in Valbonne, France
-    </div>
-
-    <div>
-    French “Baccalaureat” in Economics (Equivalent to A-level)        2004 - 2007
-    High School Pierre et Marie Curie – Menton, France
-    </div>
 </div>
 
 <div class='row'>
   <div class='card col-xs-12 col-md-4'>
     <h2>Languages</h2>
-    <p>French <%= image_tag "https://www.countryflags.io/fr/shiny/16.png" %></p>
-    <p>English <%= image_tag "https://www.countryflags.io/us/shiny/16.png" %></p>
-    <p>Portuguese <%= image_tag "https://www.countryflags.io/br/shiny/16.png" %></p>
-    <p>Spanish <%= image_tag "https://www.countryflags.io/es/shiny/16.png" %></p>
+    <p><%= image_tag "https://www.countryflags.io/fr/shiny/16.png" %> French</p>
+    <p><%= image_tag "https://www.countryflags.io/us/shiny/16.png" %> English</p>
+    <p><%= image_tag "https://www.countryflags.io/br/shiny/16.png" %> Portuguese</p>
+    <p><%= image_tag "https://www.countryflags.io/es/shiny/16.png" %> Spanish</p>
   </div>
 
 
   <div class='card col-xs-12 col-md-4'>
     <h2>Programming & IT skills</h2>
-    <p><i class="fab fa-windows"></i> Excel, Access, Word, Power Point</p>
-    <p><i class="fas fa-file-code"></i>VBA</p>
-    <p><i class="far fa-gem"></i>Ruby on Rails</p>
+    <p><i class="fab fa-windows"></i> Pack Office</p>
+    <p><i class="fas fa-file-code"></i> VBA</p>
+    <p><i class="far fa-gem"></i> Ruby on Rails</p>
     <p><i class="fab fa-js-square"></i> Javascript</p>
     <p><i class="fab fa-html5"></i> HTML, CSS</p>
-    <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub account</a></p>
   </div>
 </div>
 
 
-<div>
+<div class='card'>
   <h2>Miscellaneous</h2>
   <p><i class="fas fa-swimmer"></i> Open water long distance swimmer</p>
 </div>
