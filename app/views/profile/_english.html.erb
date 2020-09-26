@@ -2,9 +2,9 @@
   <h3>Contact:</h3>
   <p><i class="fas fa-map-marker-alt"></i> Jardim Paulista, CEP 01422-005, São Paulo, SP, Brazil</p>
   <p><i class="fas fa-phone-square"></i> +55 (11) 99595-2363</p>
-  <p><i class="fas fa-at"></i> nicolas.eymenier@edhec.com</p>
-  <p><a href="https://www.linkedin.com/in/nicolas-eymenier-frm-63012b60/"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></p>
-  <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub account</a></p>
+  <p><i class="fas fa-at"></i> <%= mail_to "nicolas.eymenier@edhec.com", "nicolas.eymenier@edhec.com" %></p>
+  <p><a href="https://www.linkedin.com/in/nicolas-eymenier-frm-63012b60/"><i class="fab fa-linkedin"></i> LinkedIn: Nicolas Eymenier</a></p>
+  <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub: NicoEym</a></p>
 </div>
 
 <div>
@@ -12,6 +12,9 @@
 
 
   <div class='card'>
+    <div class='logo'>
+      <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
+  </div>
     <div class='space_between'>
       <div><h4>Portfolio Guardian/Risk Manager</h4></div>               <div>May 2019 - Current</div>
     </div>
@@ -20,6 +23,9 @@
   </div>
 
   <div  class='card'>
+       <div class='logo'>
+      <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
+  </div>
     <div class='space_between'>
       <div><h4>Credit Risk Analyst</h4></div>               <div>April 2018 - October 2018</div>
     </div>
@@ -28,6 +34,9 @@
   </div>
 
   <div  class='card'>
+       <div class='logo'>
+      <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
+  </div>
     <div class='space_between'>
       <div><h4>Credit Risk Analyst</h4></div>               <div>August 2016 – February 2018</div>
     </div>
@@ -112,7 +121,6 @@
 
 <div class='card'>
   <h2>Education</h2>
-
 
   <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1601074416/CV/logo_wagon.png", link_site: 'https://www.lewagon.com/', diploma: "Coding bootcamp - Batch #218", school: "Le Wagon", date: "2019"} %>
 
