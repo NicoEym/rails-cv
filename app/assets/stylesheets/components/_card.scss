@@ -7,9 +7,6 @@
 }
 
 
-
-
-
 .card p {
   font-size: 12px;
   line-height: 1.4;
@@ -17,3 +14,22 @@
   margin-bottom: 0;
   margin-top: 8px;
 }
+
+
+.card-edu {
+  overflow: hidden;
+  height: 4rem;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.card-edu .content {
+  padding: 1em;
+}
+
+
