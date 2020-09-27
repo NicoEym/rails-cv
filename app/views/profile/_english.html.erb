@@ -1,25 +1,30 @@
-<div class='card'>
-  <h3>Contact:</h3>
-  <p><i class="fas fa-map-marker-alt"></i> Jardim Paulista, CEP 01422-005, São Paulo, SP, Brazil</p>
-  <p><i class="fas fa-phone-square"></i> +55 (11) 99595-2363</p>
-  <p><i class="fas fa-at"></i> <%= mail_to "nicolas.eymenier@edhec.com", "nicolas.eymenier@edhec.com" %></p>
-  <p><a href="https://www.linkedin.com/in/nicolas-eymenier-frm-63012b60/"><i class="fab fa-linkedin"></i> LinkedIn: Nicolas Eymenier</a></p>
-  <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub: NicoEym</a></p>
+<div class='row'>
+  <div class='card col-xs-12 col-md-6'>
+    <h4>Description:</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis tempora facilis dignissimos? Repellat magni officia hic cum praesentium laudantium libero aspernatur architecto. Mollitia totam tempora aspernatur ipsa temporibus officia!</p>
+  </div>
+
+    <div class='card col-xs-12 col-md-6'>
+    <h4>Contact:</h4>
+    <p><i class="fas fa-map-marker-alt"></i> Jardim Paulista, CEP 01422-005, São Paulo, SP, Brazil</p>
+    <p><i class="fas fa-phone-square"></i> +55 (11) 99595-2363</p>
+    <p><i class="fas fa-at"></i> <%= mail_to "nicolas.eymenier@edhec.com", "nicolas.eymenier@edhec.com" %></p>
+    <p><a href="https://www.linkedin.com/in/nicolas-eymenier-frm-63012b60/"><i class="fab fa-linkedin"></i> LinkedIn: Nicolas Eymenier</a></p>
+    <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub: NicoEym</a></p>
+  </div>
 </div>
 
-<div>
-  <h2>Work Experience</h2>
-
-
+<div class='card'>
+  <h4>Work Experience</h4>
   <div class='card'>
     <div class='logo'>
       <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
   </div>
     <div class='space_between'>
-      <div><h4>Portfolio Guardian/Risk Manager</h4></div>               <div>May 2019 - Current</div>
+      <div><h5>Portfolio Guardian/Risk Manager</h5></div>               <div>May 2019 - Current</div>
     </div>
-    <div><h4>CA Indosuez Wealth DTVM, São Paulo, Brazil
-    <%= image_tag "https://www.countryflags.io/br/shiny/24.png" %></h4></div>
+    <div><h5>CA Indosuez Wealth DTVM, São Paulo, Brazil
+    <%= image_tag "https://www.countryflags.io/br/shiny/24.png" %></h5></div>
   </div>
 
   <div  class='card'>
@@ -27,10 +32,10 @@
       <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
   </div>
     <div class='space_between'>
-      <div><h4>Credit Risk Analyst</h4></div>               <div>April 2018 - October 2018</div>
+      <div><h5>Credit Risk Analyst</h5></div>               <div>Apr 2018 - Oct 2018</div>
     </div>
-    <div><h4>CFM Indosuez Wealth, Monaco
-    <%= image_tag "https://www.countryflags.io/mc/shiny/24.png" %></h4></div>
+    <div><h5>CFM Indosuez Wealth, Monaco
+    <%= image_tag "https://www.countryflags.io/mc/shiny/24.png" %></h5></div>
   </div>
 
   <div  class='card'>
@@ -38,10 +43,10 @@
       <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
   </div>
     <div class='space_between'>
-      <div><h4>Credit Risk Analyst</h4></div>               <div>August 2016 – February 2018</div>
+      <div><h5>Credit Risk Analyst</h5></div>               <div>Aug 2016 – Feb 2018</div>
     </div>
-    <div><h4>CA Indosuez Wealth, Miami, USA
-    <%= image_tag "https://www.countryflags.io/us/shiny/24.png" %></h4></div>
+    <div><h5>CA Indosuez Wealth, Miami, USA
+    <%= image_tag "https://www.countryflags.io/us/shiny/24.png" %></h5></div>
     <p>* Automation of daily excess report ;</p>
     <p>* Creating and calibrating new tools to improve department daily workflow;</p>
     <p>* Portfolios analysis of global credit clients: Asset type, country, industry, ratings;</p>
@@ -51,10 +56,10 @@
 
   <div  class='card'>
     <div class='space_between'>
-      <div><h4>Associate Consultant</h4></div>              <div>November 2014 – June 2015</div>
+      <div><h5>Associate Consultant</h5></div>              <div>Nov 2014 – Jun 2015</div>
     </div>
-    <div><h4>Select Asset Management, Tokyo, Japan
-    <%= image_tag "https://www.countryflags.io/jp/shiny/24.png" %></h4></div>
+    <div><h5>Select Asset Management, Tokyo, Japan
+    <%= image_tag "https://www.countryflags.io/jp/shiny/24.png" %></h5></div>
       <p>Working as an adviser for our clients in Japan.</p>
 
       <p>Helping people make the right investment decisions for their future.</p>
@@ -67,10 +72,10 @@
 
   <div  class='card'>
     <div class='space_between'>
-      <div><h4>Risk Manager</h4></div>                <div>November 2013 – June 2014</div>
+      <div><h5>Risk Manager</h5></div>                <div>Nov 2013 – Jun 2014</div>
     </div>
-    <div><h4>Allianz Global Investors, Paris, France
-    <%= image_tag "https://www.countryflags.io/fr/shiny/24.png" %></h4></div>
+    <div><h5>Allianz Global Investors, Paris, France
+    <%= image_tag "https://www.countryflags.io/fr/shiny/24.png" %></h5></div>
     <p>*Designed, calibrated and automated stress tests for Fixed Income and Money Market funds</p>
     <p>*Developed liquidity risk scoring and classification</p>
     <p>*Produced reports on counterparty and issuer risks</p>
@@ -78,28 +83,28 @@
 
   <div class='card'>
     <div class='space_between'>
-      <div><h4>Internship, Exotic Equity Derivatives Risk Analyst</h4></div>      <div>January 2013 – July 2013</div>
+      <div><h5>Internship, Exotic Equity Derivatives Risk Analyst</h5></div>      <div>Jan 2013 – Jul 2013</div>
     </div>
-    <div><h4>Crédit Agricole Corporate and Investment Bank, Paris, France
-    <%= image_tag "https://www.countryflags.io/fr/shiny/24.png" %></h4></div>
+    <div><h5>Crédit Agricole Corporate and Investment Bank, Paris, France
+    <%= image_tag "https://www.countryflags.io/fr/shiny/24.png" %></h5></div>
   </div>
 
   <div class='card'>
     <div class='space_between'>
-      <div><h4>Internship, Risk Management & Permanent control</h4></div>             <div>September 2012 - December 2012</div>
+      <div><h5>Internship, Risk Management & Permanent control</h5></div>             <div>Sep 2012 - Dec 2012</div>
     </div>
-    <div><h4>Compagnie Monégasque de Banque, Monaco
-    <%= image_tag "https://www.countryflags.io/mc/shiny/24.png" %></h4></div>
+    <div><h5>Compagnie Monégasque de Banque, Monaco
+    <%= image_tag "https://www.countryflags.io/mc/shiny/24.png" %></h5></div>
     <p>*Calculated and analysed P&L on portfolios of exotic derivatives</p>
     <p>*Performed VaR stresses and explained results</p>
   </div>
 
   <div class='card'>
     <div class='space_between'>
-      <div><h4>Internship, Hedge Fund Assistant Risk Manager</h4></div>           <div>March 2012 - August 2012</div>
+      <div><h5>Internship, Hedge Fund Assistant Risk Manager</h5></div>           <div>Mar 2012 - Aug 2012</div>
     </div>
-    <div><h4>Nexar Capital, Paris, France
-    <%= image_tag "https://www.countryflags.io/fr/shiny/24.png" %></h4></div>
+    <div><h5>Nexar Capital, Paris, France
+    <%= image_tag "https://www.countryflags.io/fr/shiny/24.png" %></h5></div>
     <p>* Monitored market risks computing VaR, Stress Test and Greek Letters</p>
     <p>* Optimized automation of daily risk reports for 5 portfolios</p>
     <p>* Controlled risk limits on different types of portfolios: volatility arbitrage, short bias</p>
@@ -108,10 +113,10 @@
 
   <div class='card'>
     <div class='space_between'>
-      <div><h4>Internship, Junior Auditor</h4></div>                      <div>September 2011 – February 2012</div>
+      <div><h5>Internship, Junior Auditor</h5></div>                      <div>Sep 2011 – Feb 2012</div>
     </div>
-    <div><h4>Ernst & Young, Lyon, France
-    <%= image_tag "https://www.countryflags.io/fr/shiny/16.png" %></h4></div>
+    <div><h5>Ernst & Young, Lyon, France
+    <%= image_tag "https://www.countryflags.io/fr/shiny/16.png" %></h5></div>
     <p>* Intervened with a variety of clients in small and middle markets among them Norbert Dentressangle</p>
     <p>* Looked for the exposition to risks clients had to face</p>
     <p>* Managed successfully the balance-sheet’s audit</p>
@@ -120,7 +125,7 @@
 
 
 <div class='card'>
-  <h2>Education</h2>
+  <h4>Education</h4>
 
   <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1601074416/CV/logo_wagon.png", link_site: 'https://www.lewagon.com/', diploma: "Coding bootcamp - Batch #218", school: "Le Wagon", date: "2019"} %>
 
