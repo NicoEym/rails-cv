@@ -19,18 +19,18 @@
 .card-company {
   overflow: hidden;
   background: white;
-  box-shadow: 0 0 1px rgba(0,0,0,0.1);
-  padding: 1em;
-  margin-bottom: 1em;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
+  padding: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.c {
-  width: 80%;
+.card-company .content {
+  padding: 1em;
+  width: 100%;
 }
-
-
 .card-edu {
   overflow: hidden;
   height: 5rem;
