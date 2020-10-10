@@ -16,6 +16,20 @@
 }
 
 
+.card-company {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1);
+  padding: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.c {
+  width: 80%;
+}
+
 
 .card-edu {
   overflow: hidden;
