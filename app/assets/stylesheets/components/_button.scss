@@ -1,0 +1,19 @@
+.btn .btn-outline {
+  background-color: #CFB07B;
+  opacity: 0.65;
+  border: 1px solid black;
+  padding: 0.8em;
+  color: white;
+  border-radius: 7px;
+  text-align: center;
+  font-size: 1.3em;
+  width: 100%;
+  &:hover {
+    background-color: #DAC095;
+    opacity: 0.5;
+    color: white;
+    border: 1px solid black;
+    text-decoration: none;
+    cursor:pointer;
+  }
+}
