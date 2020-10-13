@@ -13,6 +13,7 @@
     <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub: NicoEym</a></p>
   </div>
 </div>
+
 <h4>Work Experience</h4>
 <div class="row">
     <div class='card-company col-xs-12 col-md-12'>
@@ -42,6 +43,16 @@
             <%= image_tag "https://www.countryflags.io/mc/shiny/24.png" %></h5></div>
           </div>
     </div>
+
+    <%= render 'shared/card-experience',  locals: {
+      link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png",
+      link_site: 'https://ca-indosuez.com/',
+      job: "Credit Risk Analyst",
+      dates: "Aug 2016 – Feb 2018",
+      company: "CA Indosuez Wealth, Miami, USA",
+      flag: "https://www.countryflags.io/us/shiny/24.png",
+      details: ["* Automation of daily excess report ;", "* Creating and calibrating new tools to improve department daily workflow;", "* Portfolios analysis of global credit clients: Asset type, country, industry, ratings;", "* Monitoring lending values of pledged collateral;", "* Quarterly review of the credit risk situation of the entity;" ]
+    } %>
 
     <div  class='card-company col-xs-12 col-md-12'>
       <div class='logo-corp'>
