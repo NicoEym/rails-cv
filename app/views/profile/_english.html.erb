@@ -16,33 +16,27 @@
 
 <h4>Work Experience</h4>
 <div class="row">
-    <div class='card-company col-xs-12 col-md-12'>
-      <div class='logo-corp'>
-        <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
-      </div>
 
-      <div class="content">
-          <div class='space_between'>
-          <div><h5>Portfolio Guardian/Risk Manager</h5></div>               <div>May 2019 - Current</div>
-        </div>
-        <div><h5>CA Indosuez Wealth DTVM, São Paulo, Brazil
-          <%= image_tag "https://www.countryflags.io/br/shiny/24.png" %></h5></div>
-      </div>
-    </div>
 
-    <div  class='card-company col-xs-12 col-md-12'>
-      <div class='logo-corp'>
-        <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
-      </div>
+    <%= render 'shared/card-experience',  locals: {
+      link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png",
+      link_site: 'https://ca-indosuez.com/',
+      job: "Portfolio Guardian/Risk Manager",
+      dates: "May 2019 - Current",
+      company: "CA Indosuez Wealth DTVM, São Paulo, Brazil",
+      flag: "https://www.countryflags.io/br/shiny/24.png",
+      details: [ ]
+    } %>
 
-        <div class="content">
-          <div class='space_between'>
-            <div><h5>Credit Risk Analyst</h5></div>               <div>Apr 2018 - Oct 2018</div>
-          </div>
-          <div><h5>CFM Indosuez Wealth, Monaco
-            <%= image_tag "https://www.countryflags.io/mc/shiny/24.png" %></h5></div>
-          </div>
-    </div>
+    <%= render 'shared/card-experience',  locals: {
+      link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png",
+      link_site: 'https://ca-indosuez.com/',
+      job: "Credit Risk Analyst",
+      dates: "Apr 2018 - Oct 2018",
+      company: "CFM Indosuez Wealth, Monaco",
+      flag: "https://www.countryflags.io/mc/shiny/24.png",
+      details: [ ]
+    } %>
 
     <%= render 'shared/card-experience',  locals: {
       link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png",
@@ -54,67 +48,28 @@
       details: ["* Automation of daily excess report ;", "* Creating and calibrating new tools to improve department daily workflow;", "* Portfolios analysis of global credit clients: Asset type, country, industry, ratings;", "* Monitoring lending values of pledged collateral;", "* Quarterly review of the credit risk situation of the entity;" ]
     } %>
 
-    <div  class='card-company col-xs-12 col-md-12'>
-      <div class='logo-corp'>
-        <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png"), "https://ca-indosuez.com/") %>
-      </div>
-      <div class="content">
-        <div class='space_between'>
-          <div><h5>Credit Risk Analyst</h5></div>               <div>Aug 2016 – Feb 2018</div>
-        </div>
-        <div><h5>CA Indosuez Wealth, Miami, USA
-        <%= image_tag "https://www.countryflags.io/us/shiny/24.png" %></h5></div>
+    <%= render 'shared/card-experience',  locals: {
+      link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602373268/CV/select_logo.png",
+      link_site: 'https://ca-indosuez.com/',
+      job: "Associate Consultant",
+      dates: "Nov 2014 – Jun 2015",
+      company: "Select Asset Management, Tokyo, Japan",
+      flag: "https://www.countryflags.io/jp/shiny/24.png",
+      details: ["Working as an adviser for our clients in Japan. ;", "Helping people make the right investment decisions for their future;", "* Performing financial reviews;", "* Analyzing clients' existing financial arrangements, portfolios, needs and priorities;", "* Helping clients with making their investment decisions;", "* Analyzing clients' existing financial arrangements, portfolios, needs and priorities;", "* Helping clients with making their investment decisions", "* Structuring appropriate solutions and strategies for clients; ", "* Sourcing new clients and business development."  ]
+    } %>
 
-        <a class="btn btn-outline flex-end" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-      <p><i class="fas fa-angle-down"></i> See details</p></a>
 
-        <div class="collapse" id="collapseExample">
-          <p>* Automation of daily excess report ;</p>
-          <p>* Creating and calibrating new tools to improve department daily workflow;</p>
-          <p>* Portfolios analysis of global credit clients: Asset type, country, industry, ratings;</p>
-          <p>* Monitoring lending values of pledged collateral;</p>
-          <p>* Quarterly review of the credit risk situation of the entity;</p>
-        </div>
-      </div>
-    </div>
+       <%= render 'shared/card-experience',  locals: {
+      link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372897/CV/Allianz_GI_Logo.png",
+      link_site: 'https://ca-indosuez.com/',
+      job: "Risk Manager",
+      dates: "Nov 2013 – Jun 2014",
+      company: "Allianz Global Investors, Paris, France",
+      flag: "https://www.countryflags.io/fr/shiny/24.png",
+      details: ["* Designed, calibrated and automated stress tests for Fixed Income and Money Market funds;", "* Developed liquidity risk scoring and classification;", "* Produced reports on counterparty and issuer risks;" ]
+    } %>
 
-    <div  class='card-company col-xs-12 col-md-12'>
 
-      <div class='logo-corp'>
-        <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1602373268/CV/select_logo.png"), "https://ca-indosuez.com/") %>
-      </div>
-      <div class="content">
-        <div class='space_between'>
-          <div><h5>Associate Consultant</h5></div>              <div>Nov 2014 – Jun 2015</div>
-        </div>
-        <div><h5>Select Asset Management, Tokyo, Japan
-        <%= image_tag "https://www.countryflags.io/jp/shiny/24.png" %></h5></div>
-          <p>Working as an adviser for our clients in Japan.</p>
-
-          <p>Helping people make the right investment decisions for their future.</p>
-          <p>* Performing financial reviews</p>
-          <p>* Analyzing clients' existing financial arrangements, portfolios, needs and priorities.</p>
-          <p>* Helping clients with making their investment decisions</p>
-          <p>* Structuring appropriate solutions and strategies for clients</p>
-          <p>* Sourcing new clients and business development.</p>
-      </div>
-    </div>
-
-    <div  class='card-company col-xs-12 col-md-12'>
-      <div class='logo-corp'>
-        <%= link_to(image_tag("https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372897/CV/Allianz_GI_Logo.png"), "https://www.ey.com/en_gl") %>
-      </div>
-      <div class="content">
-        <div class='space_between'>
-          <div><h5>Risk Manager</h5></div>                <div>Nov 2013 – Jun 2014</div>
-        </div>
-        <div><h5>Allianz Global Investors, Paris, France
-        <%= image_tag "https://www.countryflags.io/fr/shiny/24.png" %></h5></div>
-        <p>*Designed, calibrated and automated stress tests for Fixed Income and Money Market funds</p>
-        <p>*Developed liquidity risk scoring and classification</p>
-        <p>*Produced reports on counterparty and issuer risks</p>
-      </div>
-    </div>
 
     <div class='card-company col-xs-12 col-md-12'>
       <div class='logo-corp'>
