@@ -1,6 +1,6 @@
 .card {
   overflow: hidden;
-  background: white;
+  width: 100%;
   box-shadow: 0 0 1px rgba(0,0,0,0.1);
   padding: 1em;
   margin-bottom: 1em;
@@ -18,7 +18,7 @@
 
 .card-company {
   overflow: hidden;
-  background: white;
+width: 100%;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
 .card-edu {
   overflow: hidden;
   height: 5rem;
-  background: white;
+
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
