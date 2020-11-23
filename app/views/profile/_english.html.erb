@@ -5,34 +5,26 @@
   <div class="container-home">
     <div class="width25 margin05 white">
 
-          <div class="box_shadowing">
+          <div class="box_shadowing marginb">
           <h4>Contact:</h4>
           <p><i class="fas fa-map-marker-alt"></i> Jardim Paulista, CEP 01422-005, São Paulo, SP, Brazil</p>
-          <p><i class="fas fa-phone-square"></i> +55 (11) 99595-2363</p>
-          <p><i class="fas fa-at"></i> <%= mail_to "nicolas.eymenier@edhec.com", "nicolas.eymenier@edhec.com" %></p>
-          <p><a href="https://www.linkedin.com/in/nicolas-eymenier-frm-63012b60/"><i class="fab fa-linkedin"></i> LinkedIn: Nicolas Eymenier</a></p>
-          <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub: NicoEym</a></p>
+          <%= render 'shared/contact-card' %>
         </div>
 
-         <div class="box_shadowing">
+         <div class="box_shadowing marginb">
           <h2>Certifications</h2>
-          <p>Financial Risk Manager - GARP - 2020</p>
-          <p>CPA 20 - ANBIMA - 2019</p>
+          <%= render 'shared/certification-card' %>
         </div>
 
-        <div class="box_shadowing">
+        <div class="box_shadowing marginb">
           <h2>Coding & IT skills</h2>
-          <p><i class="fab fa-windows"></i> Pack Office</p>
-          <p><i class="fas fa-file-code"></i> VBA</p>
-          <p><i class="far fa-gem"></i> Ruby on Rails</p>
-          <p><i class="fab fa-js-square"></i> Javascript</p>
-          <p><i class="fab fa-html5"></i> HTML, CSS</p>
+          <%= render 'shared/coding-card' %>
         </div>
 
-        <div class="box_shadowing">
+        <div class="box_shadowing marginb">
           <h2>Languages</h2>
           <p><%= image_tag "https://www.countryflags.io/fr/shiny/16.png" %> French</p>
-          <input class="slide" type="range" min="0" max="200" value="200" label="test">
+          <input class="slide" type="range" min="0" max="400" value="200" label="test">
           <p><%= image_tag "https://www.countryflags.io/us/shiny/16.png" %> English</p>
           <input class="slide" type="range" min="0" max="200" value="200" label="test">
           <p><%= image_tag "https://www.countryflags.io/br/shiny/16.png" %> Portuguese</p>
@@ -42,7 +34,7 @@
         </div>
 
 
-          <div class="box_shadowing">
+          <div class="box_shadowing marginb">
             <h2>Miscellaneous</h2>
             <p><i class="fas fa-swimmer"></i> Open water very long distance swimmer</p>
           </div>
