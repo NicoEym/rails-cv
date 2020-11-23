@@ -1,170 +1,163 @@
-<div class="width25">
-  <div class="row space_around align-center">
-          <%= image_tag 'https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg', class: "avatar-large" %>
-          <h1>Nicolas EYMENIER, FRM</h1>
-        </div>
-      <div>
+  <div>
         <h4>Description:</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam perferendis tempora facilis dignissimos? Repellat magni officia hic cum praesentium laudantium libero aspernatur architecto. Mollitia totam tempora aspernatur ipsa temporibus officia!</p>
       </div>
+  <div class="container-home">
+    <div class="width25 margin05 white">
 
-        <div>
-        <h4>Contact:</h4>
-        <p><i class="fas fa-map-marker-alt"></i> Jardim Paulista, CEP 01422-005, São Paulo, SP, Brazil</p>
-        <p><i class="fas fa-phone-square"></i> +55 (11) 99595-2363</p>
-        <p><i class="fas fa-at"></i> <%= mail_to "nicolas.eymenier@edhec.com", "nicolas.eymenier@edhec.com" %></p>
-        <p><a href="https://www.linkedin.com/in/nicolas-eymenier-frm-63012b60/"><i class="fab fa-linkedin"></i> LinkedIn: Nicolas Eymenier</a></p>
-        <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub: NicoEym</a></p>
-      </div>
-
-
-
-      <div>
-        <h2>Languages</h2>
-        <p><%= image_tag "https://www.countryflags.io/fr/shiny/16.png" %> French</p>
-        <input class="slide" type="range" min="0" max="200" value="200" label="test">
-        <p><%= image_tag "https://www.countryflags.io/us/shiny/16.png" %> English</p>
-        <input class="slide" type="range" min="0" max="200" value="200" label="test">
-        <p><%= image_tag "https://www.countryflags.io/br/shiny/16.png" %> Portuguese</p>
-        <input class="slide" type="range" min="0" max="200" value="200" label="test">
-        <p><%= image_tag "https://www.countryflags.io/es/shiny/16.png" %> Spanish</p>
-        <input class="slide" type="range" min="0" max="200" value="130" label="test">
-      </div>
-
-
-      <div>
-        <h2>Programming & IT skills</h2>
-        <p><i class="fab fa-windows"></i> Pack Office</p>
-        <p><i class="fas fa-file-code"></i> VBA</p>
-        <p><i class="far fa-gem"></i> Ruby on Rails</p>
-        <p><i class="fab fa-js-square"></i> Javascript</p>
-        <p><i class="fab fa-html5"></i> HTML, CSS</p>
-      </div>
-
-       <div>
-        <h2>Certifications</h2>
-        <p>Financial Risk Manager - GARP - 2020</p>
-        <p>CPA 20 - ANBIMA - 2019</p>
-      </div>
-
-
-
-
-        <div>
-          <h2>Miscellaneous</h2>
-          <p><i class="fas fa-swimmer"></i> Open water long distance swimmer</p>
+          <div class="box_shadowing">
+          <h4>Contact:</h4>
+          <p><i class="fas fa-map-marker-alt"></i> Jardim Paulista, CEP 01422-005, São Paulo, SP, Brazil</p>
+          <p><i class="fas fa-phone-square"></i> +55 (11) 99595-2363</p>
+          <p><i class="fas fa-at"></i> <%= mail_to "nicolas.eymenier@edhec.com", "nicolas.eymenier@edhec.com" %></p>
+          <p><a href="https://www.linkedin.com/in/nicolas-eymenier-frm-63012b60/"><i class="fab fa-linkedin"></i> LinkedIn: Nicolas Eymenier</a></p>
+          <p><a href="https://github.com/NicoEym/"><i class="fab fa-github"></i> GitHub: NicoEym</a></p>
         </div>
-      </div>
+
+         <div class="box_shadowing">
+          <h2>Certifications</h2>
+          <p>Financial Risk Manager - GARP - 2020</p>
+          <p>CPA 20 - ANBIMA - 2019</p>
+        </div>
+
+        <div class="box_shadowing">
+          <h2>Coding & IT skills</h2>
+          <p><i class="fab fa-windows"></i> Pack Office</p>
+          <p><i class="fas fa-file-code"></i> VBA</p>
+          <p><i class="far fa-gem"></i> Ruby on Rails</p>
+          <p><i class="fab fa-js-square"></i> Javascript</p>
+          <p><i class="fab fa-html5"></i> HTML, CSS</p>
+        </div>
+
+        <div class="box_shadowing">
+          <h2>Languages</h2>
+          <p><%= image_tag "https://www.countryflags.io/fr/shiny/16.png" %> French</p>
+          <input class="slide" type="range" min="0" max="200" value="200" label="test">
+          <p><%= image_tag "https://www.countryflags.io/us/shiny/16.png" %> English</p>
+          <input class="slide" type="range" min="0" max="200" value="200" label="test">
+          <p><%= image_tag "https://www.countryflags.io/br/shiny/16.png" %> Portuguese</p>
+          <input class="slide" type="range" min="0" max="200" value="200" label="test">
+          <p><%= image_tag "https://www.countryflags.io/es/shiny/16.png" %> Spanish</p>
+          <input class="slide" type="range" min="0" max="200" value="130" label="test">
+        </div>
+
+
+          <div class="box_shadowing">
+            <h2>Miscellaneous</h2>
+            <p><i class="fas fa-swimmer"></i> Open water very long distance swimmer</p>
+          </div>
+        </div>
 
 
 
-  <div class="width75">
-    <h4>Work Experience</h4>
-    <div class="row">
+    <div class="width75 margin05 white">
+      <h4>Work Experience</h4>
+      <div class="row">
 
 
-        <%= render 'shared/card-experience',  locals: {
-          link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png",
-          link_site: 'https://ca-indosuez.com/',
-          job: "Portfolio Guardian/Risk Manager",
-          dates: "Apr 2019 - Current",
-          company: "CA Indosuez Wealth DTVM, São Paulo, Brazil",
-          flag: "https://www.countryflags.io/br/shiny/24.png",
-          details: ["* Responsible for market, credit and liquidity risk management of CA Indosuez Wealth Brazil", "* Monitoring the compliance of investment funds vs internal limits, prospectus limits and regulatory limits", "* Designed and implemented a new methodology for Liquidity calculation", "* Developped liquidity and market stress test", "* Monitored the credit quality of over 100 companies" ],
-          i: 1
-        } %>
+          <%= render 'shared/card-experience',  locals: {
+            link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png",
+            link_site: 'https://ca-indosuez.com/',
+            job: "Portfolio Guardian/Risk Manager",
+            dates: "Apr 2019 - Current",
+            company: "CA Indosuez Wealth DTVM, São Paulo, Brazil",
+            flag: "https://www.countryflags.io/br/shiny/24.png",
+            details: ["* Responsible for market, credit and liquidity risk management of CA Indosuez Wealth Brazil", "* Monitoring the compliance of investment funds vs internal limits, prospectus limits and regulatory limits", "* Designed and implemented a new methodology for Liquidity calculation", "* Developped liquidity and market stress test", "* Monitored the credit quality of over 100 companies" ],
+            i: 1
+          } %>
 
 
 
-        <%= render 'shared/card-experience',  locals: {
-          link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png",
-          link_site: 'https://ca-indosuez.com/',
-          job: "Credit Risk Analyst",
-          dates: "Aug 2016 – Oct 2018",
-          company: "CA Indosuez Wealth, Miami, USA",
-          flag: "https://www.countryflags.io/us/shiny/24.png",
-          details: ["* Automation of daily excess report ;", "* Creating and calibrating new tools to improve department daily workflow;", "* Portfolios analysis of global credit clients: Asset type, country, industry, ratings;", "* Monitoring lending values of pledged collateral;", "* Quarterly review of the credit risk situation of the entity;" ],
-          i: 2
-        } %>
+          <%= render 'shared/card-experience',  locals: {
+            link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1591020691/ca-indo_logo.png",
+            link_site: 'https://ca-indosuez.com/',
+            job: "Credit Risk Analyst",
+            dates: "Aug 2016 – Oct 2018",
+            company: "CA Indosuez Wealth, Miami, USA",
+            flag: "https://www.countryflags.io/us/shiny/24.png",
+            details: ["* Automation of daily excess report ;", "* Creating and calibrating new tools to improve department daily workflow;", "* Portfolios analysis of global credit clients: Asset type, country, industry, ratings;", "* Monitoring lending values of pledged collateral;", "* Quarterly review of the credit risk situation of the entity;" ],
+            i: 2
+          } %>
 
-        <%= render 'shared/card-experience',  locals: {
-          link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602373268/CV/select_logo.png",
-          link_site: 'https://ca-indosuez.com/',
-          job: "Associate Consultant",
-          dates: "Nov 2014 – Jun 2015",
-          company: "Select Asset Management, Tokyo, Japan",
-          flag: "https://www.countryflags.io/jp/shiny/24.png",
-          details: ["Working as an adviser for our clients in Japan. ;", "Helping people make the right investment decisions for their future;", "* Performing financial reviews;", "* Analyzing clients' existing financial arrangements, portfolios, needs and priorities;", "* Helping clients with making their investment decisions;", "* Analyzing clients' existing financial arrangements, portfolios, needs and priorities;", "* Helping clients with making their investment decisions", "* Structuring appropriate solutions and strategies for clients; ", "* Sourcing new clients and business development."  ],
-          i: 3
-        } %>
+          <%= render 'shared/card-experience',  locals: {
+            link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602373268/CV/select_logo.png",
+            link_site: 'https://ca-indosuez.com/',
+            job: "Associate Consultant",
+            dates: "Nov 2014 – Jun 2015",
+            company: "Select Asset Management, Tokyo, Japan",
+            flag: "https://www.countryflags.io/jp/shiny/24.png",
+            details: ["Working as an adviser for our clients in Japan. ;", "Helping people make the right investment decisions for their future;", "* Performing financial reviews;", "* Analyzing clients' existing financial arrangements, portfolios, needs and priorities;", "* Helping clients with making their investment decisions;", "* Analyzing clients' existing financial arrangements, portfolios, needs and priorities;", "* Helping clients with making their investment decisions", "* Structuring appropriate solutions and strategies for clients; ", "* Sourcing new clients and business development."  ],
+            i: 3
+          } %>
+
+
+             <%= render 'shared/card-experience',  locals: {
+            link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372897/CV/Allianz_GI_Logo.png",
+            link_site: 'https://ca-indosuez.com/',
+            job: "Risk Manager",
+            dates: "Nov 2013 – Jun 2014",
+            company: "Allianz Global Investors, Paris, France",
+            flag: "https://www.countryflags.io/fr/shiny/24.png",
+            details: ["* Designed, calibrated and automated stress tests for Fixed Income and Money Market funds;", "* Developed liquidity risk scoring and classification;", "* Produced reports on counterparty and issuer risks;" ],
+            i: 4
+          } %>
+
+
+             <%= render 'shared/card-experience',  locals: {
+            link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372897/CV/CACIB_logo.png",
+            link_site: 'https://ca-indosuez.com/',
+            job: "Internship, Exotic Equity Derivatives Risk Analyst",
+            dates: "Jan 2013 – Jun 2013",
+            company: "Crédit Agricole Corporate and Investment Bank, Paris, France",
+            flag: "https://www.countryflags.io/fr/shiny/24.png",
+            details: ["* Calculated and analysed P&L on portfolios of exotic derivatives",
+                      "* Performed VaR stresses and explained results" ],
+            i: 5
+          } %>
+
+
+          <%= render 'shared/card-experience',  locals: {
+            link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372897/CV/nexar_logo.jpg",
+            link_site: 'https://ca-indosuez.com/',
+            job: "Internship, Hedge Fund Assistant Risk Manager",
+            dates: "Mar 2012 - Aug 2012",
+            company: "Nexar Capital, Paris, France",
+            flag: "https://www.countryflags.io/fr/shiny/24.png",
+            details: ["* Monitored market risks computing VaR, Stress Test and Greek Letters", "* Optimized automation of daily risk reports for 5 portfolios", "* Controlled risk limits on different types of portfolios: volatility arbitrage, short bias", "* Worked on due diligence for 10 counterparties" ],
+            i: 6
+          } %>
 
 
            <%= render 'shared/card-experience',  locals: {
-          link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372897/CV/Allianz_GI_Logo.png",
-          link_site: 'https://ca-indosuez.com/',
-          job: "Risk Manager",
-          dates: "Nov 2013 – Jun 2014",
-          company: "Allianz Global Investors, Paris, France",
-          flag: "https://www.countryflags.io/fr/shiny/24.png",
-          details: ["* Designed, calibrated and automated stress tests for Fixed Income and Money Market funds;", "* Developed liquidity risk scoring and classification;", "* Produced reports on counterparty and issuer risks;" ],
-          i: 4
-        } %>
+            link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372304/CV/Logo_EY.png",
+            link_site: 'https://ca-indosuez.com/',
+            job: "Internship, Junior Auditor",
+            dates: "Sep 2011 – Feb 2012",
+            company: "Ernst & Young, Lyon, France",
+            flag: "https://www.countryflags.io/fr/shiny/16.png",
+            details: ["* Intervened with a variety of clients in small and middle markets among them Norbert Dentressangle", "* Looked for the exposition to risks clients had to face", "* Managed successfully the balance-sheet’s audit" ],
+            i: 7
+          } %>
 
-
-           <%= render 'shared/card-experience',  locals: {
-          link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372897/CV/CACIB_logo.png",
-          link_site: 'https://ca-indosuez.com/',
-          job: "Internship, Exotic Equity Derivatives Risk Analyst",
-          dates: "Jan 2013 – Jun 2013",
-          company: "Crédit Agricole Corporate and Investment Bank, Paris, France",
-          flag: "https://www.countryflags.io/fr/shiny/24.png",
-          details: ["* Calculated and analysed P&L on portfolios of exotic derivatives",
-                    "* Performed VaR stresses and explained results" ],
-          i: 5
-        } %>
-
-
-        <%= render 'shared/card-experience',  locals: {
-          link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372897/CV/nexar_logo.jpg",
-          link_site: 'https://ca-indosuez.com/',
-          job: "Internship, Hedge Fund Assistant Risk Manager",
-          dates: "Mar 2012 - Aug 2012",
-          company: "Nexar Capital, Paris, France",
-          flag: "https://www.countryflags.io/fr/shiny/24.png",
-          details: ["* Monitored market risks computing VaR, Stress Test and Greek Letters", "* Optimized automation of daily risk reports for 5 portfolios", "* Controlled risk limits on different types of portfolios: volatility arbitrage, short bias", "* Worked on due diligence for 10 counterparties" ],
-          i: 6
-        } %>
-
-
-         <%= render 'shared/card-experience',  locals: {
-          link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1602372304/CV/Logo_EY.png",
-          link_site: 'https://ca-indosuez.com/',
-          job: "Internship, Junior Auditor",
-          dates: "Sep 2011 – Feb 2012",
-          company: "Ernst & Young, Lyon, France",
-          flag: "https://www.countryflags.io/fr/shiny/16.png",
-          details: ["* Intervened with a variety of clients in small and middle markets among them Norbert Dentressangle", "* Looked for the exposition to risks clients had to face", "* Managed successfully the balance-sheet’s audit" ],
-          i: 7
-        } %>
-
-
-    </div>
-
-    <h4>Education</h4>
-      <div class='row'>
-
-
-      <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1601074416/CV/logo_wagon.png", link_site: 'https://www.lewagon.com/', diploma: "Coding bootcamp - Batch #218", school: "Le Wagon", date: "Dec 2018 - March 2019"} %>
-
-      <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1603489909/CV/edhec_logo.jpg", link_site: 'https://www.edhec.edu/en', diploma: "Master of Science in Risk & Investment Management", school: "EDHEC Business School  - London", date: "2009 - 2012"} %>
-
-      <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.lewagon.com/', diploma: "French “Classe Préparatoire” in Economics", school: "International High School in Valbonne, France", date: "2007- 2009"} %>
-
-      <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'http://www.civfrance.com/', diploma: "French “Baccalaureat” in Economics (Equivalent to A-level)", school: "High School Pierre et Marie Curie – Menton, France", date: "2004- 2007"} %>
 
       </div>
 
-      <h4>Portfolio</h4>
+      <h4>Education</h4>
+        <div class='row'>
+
+
+        <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1601074416/CV/logo_wagon.png", link_site: 'https://www.lewagon.com/', diploma: "Coding bootcamp - Batch #218", school: "Le Wagon", date: "Dec 2018 - March 2019"} %>
+
+        <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1603489909/CV/edhec_logo.jpg", link_site: 'https://www.edhec.edu/en', diploma: "Master of Science in Risk & Investment Management", school: "EDHEC Business School  - London", date: "2009 - 2012"} %>
+
+        <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'https://www.lewagon.com/', diploma: "French “Classe Préparatoire” in Economics", school: "International High School in Valbonne, France", date: "2007- 2009"} %>
+
+        <%= render 'shared/card-education',  locals: {link_img: "https://res.cloudinary.com/dzxrdf9za/image/upload/v1600030386/Nico-292x300.jpg", link_site: 'http://www.civfrance.com/', diploma: "French “Baccalaureat” in Economics (Equivalent to A-level)", school: "High School Pierre et Marie Curie – Menton, France", date: "2004- 2007"} %>
+
+        </div>
+
+        <h4>Portfolio</h4>
+      </div>
     </div>
   </div>
 </div>
