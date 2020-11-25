@@ -1,21 +1,28 @@
-<div  class='card-company'>
-      <div class='logo-corp'>
-        <%= link_to(image_tag(locals[:link_img]), locals[:link_site]) %>
+<div class='card-company'>
+  <div class='logo-corp'>
+    <%= link_to(image_tag(locals[:link_img]), locals[:link_site]) %>
+  </div>
+  <div class="content">
+    <div class='space_between'>
+      <div>
+        <h5><%= locals[:job] %></h5>
       </div>
-      <div class="content">
-        <div class='space_between'>
-          <div><h5><%= locals[:job] %></h5></div>               <div><%= locals[:dates] %></div>
-        </div>
-        <div class="space_between"><h5><%= locals[:company] %>
-         <%= image_tag locals[:flag] %></h5>
-
-        <a class="btn btn-outline" data-toggle="collapse" href="#collapse<%= locals[:i] %>" role="button" aria-expanded="false" aria-controls="collapse<%= locals[:i] %>">
-      <p><i class="fas fa-angle-down"></i> See details</p></a></div>
-
-        <div class="collapse" id="collapse<%= locals[:i] %>">
-          <% locals[:details].each do |detail| %>
-            <p><%= detail %></p>
-          <% end %>
-        </div>
+      <div>
+        <%= locals[:dates] %>
       </div>
+    </div>
+    <div class="space_between">
+      <h5><%= locals[:company] %> <%= image_tag locals[:flag] %></h5>
+
+      <a class="btn btn-outline" data-toggle="collapse" href="#collapse<%= locals[:i] %>" role="button" aria-expanded="false" aria-controls="collapse<%= locals[:i] %>">
+      <p><i class="fas fa-angle-down"></i> See details</p></a>
+    </div>
+
+
+  </div>
+</div>
+ <div class="collapse padding05 white" id="collapse<%= locals[:i] %>">
+      <% locals[:details].each do |detail| %>
+        <p><%= detail %></p>
+      <% end %>
     </div>
