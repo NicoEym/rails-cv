@@ -1,9 +1,16 @@
-<div class="card-portfolio">
-
-
-    <div class="content">
-        <p><%= locals[:appli_name]  link_to('<i class="fab fa-github"></i>', locals[:link_github]) link_to('<i class="far fa-eye"></i>', locals[:link_github]) %> </p>
-        <p><%= locals[:appli_description] %> </p>
-
+<div class='card-edu'>
+  <div class='logo-corp'>
+    <%= link_to(image_tag(locals[:link_img]), locals[:link_site]) %>
+  </div>
+  <div class="content">
+    <div class='space_between'>
+      <div>
+        <h5><%= locals[:diploma] %></h5>
+      </div>
+      <div>
+        <%= locals[:date] %>
+      </div>
     </div>
+    <%= locals[:school] %>
+  </div>
 </div>
