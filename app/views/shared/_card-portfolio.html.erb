@@ -2,7 +2,16 @@
 
 
     <div class="content">
-        <p><%= locals[:appli_name] %></p> <%=  link_to('<i class="fab fa-github"></i>', locals[:link_github])%> <%= link_to('<i class="far fa-eye"></i>', locals[:link_github]) %>
+        <p><%= locals[:appli_name] %></p>
+
+        <%= link_to locals[:link_github] do %>
+          <i class="fab fa-github"></i>
+        <% end %>
+
+        <%= link_to locals[:link_site] do %>
+          <i class="far fa-eye"></i>
+        <% end %>
+
         <p><%= locals[:appli_description] %> </p>
 
     </div>
