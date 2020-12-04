@@ -21,8 +21,10 @@
 
   </div>
 </div>
- <div class="collapse padding05 white" id="collapse<%= locals[:i] %>">
-      <% locals[:details].each do |detail| %>
-        <p><%= detail %></p>
-      <% end %>
-    </div>
+<div class="collapse padding05 white" id="collapse<%= locals[:i] %>">
+  <ul>
+    <% locals[:details].each do |detail| %>
+      <li><%= detail %></li>
+    <% end %>
+  </ul>
+</div>
