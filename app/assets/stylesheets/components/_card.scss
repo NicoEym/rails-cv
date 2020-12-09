@@ -1,7 +1,7 @@
 .card-intro {
   overflow: hidden;
   height: 120px;
-  background: white;
+  background: #FFFFFC;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
@@ -32,7 +32,6 @@
 
 }
 
-
 .card-company {
   overflow: hidden;
   width: 100%;
@@ -45,16 +44,15 @@
 
 }
 
-
 .card-company .content {
   padding: 0.5em;
   width: 100%;
   vertical-align: baseline;
 }
+
 .card-edu {
   overflow: hidden;
   height: 5rem;
-
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
   display: flex;
   align-items: center;
