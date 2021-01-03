@@ -1,6 +1,5 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to root_path, class: "navbar-brand" do %>
-    <i class="fas fa-swimmer"></i>
   <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -12,11 +11,7 @@
     <ul class="navbar-nav mr-auto">
       <% @languages.each do |language| %>
         <li class="nav-item active">
-          <%= link_to language_path(language) do %>
-              <%= image_tag language.flag %>
-            <% end %>
-
-            <%= link_to(language.name, language_path(language), id: '#{language.name}', class: "nav-link") %>
+            <%= image_tag language.flag, id: language.name, class: "nav-link cursor" %>
         </li>
         <% end %>
     </ul>

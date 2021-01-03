@@ -4,10 +4,10 @@ const initSwitchLanguage = () => {
   const portuguese_page = document.getElementById('portuguese-page');
   const spanish_page = document.getElementById('spanish-page');
 
-  const spanish_flag = document.getElementById('spanish-flag');
-  const english_flag = document.getElementById('english-flag');
-  const portuguese_flag = document.getElementById('portuguese-flag');
-  const french_flag = document.getElementById('french-flag');
+  const spanish_flag = document.getElementById('Español');
+  const english_flag = document.getElementById('English');
+  const portuguese_flag = document.getElementById('Português');
+  const french_flag = document.getElementById('Français');
 
   if (spanish_flag) {
     spanish_flag.addEventListener('click', (e) => {
